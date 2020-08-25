@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
 using HWMData.Models;
 
 namespace HWMData.Controllers
@@ -12,9 +13,15 @@ namespace HWMData.Controllers
         dbHWMDataEntities db = new dbHWMDataEntities();
 
         // GET: Flow
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            return View(db.tFlowmeters.OrderByDescending(m => m.fDateTime).ToList());
+            var lFlowmeters = db.tFlowmeters.OrderByDescending(m => m.fId).ToList();
+
+            var pageNumber = page ?? 1; // if no page was specified in the querystring, default to the first page (1)
+            var onePageOfFlowmeters = lFlowmeters.ToPagedList(pageNumber, 10); // will only contain 25 products max because of the pageSize
+            ViewBag.OnePageOfFlowmeters = onePageOfFlowmeters;
+
+            return View(onePageOfFlowmeters);
         }
 
         // GET: Flow/Details/5

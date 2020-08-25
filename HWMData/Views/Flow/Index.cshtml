@@ -1,0 +1,81 @@
+﻿@model IEnumerable<HWMData.Models.tFlowmeter>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fSerialNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fDepth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fVelocity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fTemperature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fQuality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fFlow)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fSerialNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fDateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fDepth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fVelocity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTemperature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fQuality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fFlow)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.fId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.fId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.fId })
+        </td>
+    </tr>
+}
+
+</table>

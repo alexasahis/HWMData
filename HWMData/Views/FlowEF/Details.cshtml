@@ -1,0 +1,90 @@
+﻿@model HWMData.Models.tFlowmeter
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tFlowmeter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fSerialNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fSerialNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fDepth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fDepth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fVelocity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fVelocity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fTemperature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fTemperature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fQuality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fQuality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fFlow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fFlow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.fId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

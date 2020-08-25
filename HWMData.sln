@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWMData", "HWMData\HWMData.csproj", "{88CC167A-8B92-44B9-9F53-49E920869EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWMData.Tests", "HWMData.Tests\HWMData.Tests.csproj", "{D873BCF0-AA89-441B-BD1C-0A36BCB15062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88CC167A-8B92-44B9-9F53-49E920869EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88CC167A-8B92-44B9-9F53-49E920869EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88CC167A-8B92-44B9-9F53-49E920869EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88CC167A-8B92-44B9-9F53-49E920869EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D873BCF0-AA89-441B-BD1C-0A36BCB15062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D873BCF0-AA89-441B-BD1C-0A36BCB15062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D873BCF0-AA89-441B-BD1C-0A36BCB15062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D873BCF0-AA89-441B-BD1C-0A36BCB15062}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B116E707-9629-4B98-9C03-835B5FF2453E}
+	EndGlobalSection
+EndGlobal
